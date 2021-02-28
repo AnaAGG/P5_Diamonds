@@ -1,4 +1,5 @@
 # P5_Diamonds
+![portada](https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.tiffany.com%2Fis%2Fimage%2Ftiffanydm%2FGuideToDiamonds_LP_Hero_Desktop_v2-2%3F%24tile%24%26wid%3D2992&imgrefurl=https%3A%2F%2Fwww.tiffany.es%2Fengagement%2Fthe-tiffany-guide-to-diamonds%2F&tbnid=SjhUZVPtAqdOFM&vet=12ahUKEwil-Iymt43vAhURcxoKHZqWAfwQMygPegUIARCyAg..i&docid=-kVbOPpyAklYRM&w=2992&h=748&q=diamantes&safe=active&ved=2ahUKEwil-Iymt43vAhURcxoKHZqWAfwQMygPegUIARCyAg)
 
 ![squema](https://github.com/AnaAGG/P5_Diamonds/blob/main/Images/squema.png)
 # Data
@@ -15,20 +16,18 @@
 * **price**: price in USD  
 * **carat**: weight of the diamond  
 * **cut**: quality of the cut (Fair, Good, Very Good, Premium, Ideal)
-* **color**: diamond colour, from J (worst) to D (best)  
-
-**clarity**: a measurement of how clear the diamond from worst to best is (I1 , SI2, SI1, VS2, VS1, VVS2, VVS1, IF )  
-
+* **color**: diamond colour, from J (worst) to D (best)
+* **clarity**: a measurement of how clear the diamond from worst to best is (I1 , SI2, SI1, VS2, VS1, VVS2, VVS1, IF )
 * **x**: length in mm  
 * **y**: width in mm  
 * **z**: depth in mm  
 * **depth**: total depth percentage = z / mean(x, y) = 2 * z / (x + y)  
 * **table**: width of top of diamond relative to widest point 
 
-# Stepwise 
+# Workflow 
 
- 1- Correlation matrix: (see also the pairplot)
-
+ 1- Correlation matrix: 
+ 
 ![corrmatrix](https://github.com/AnaAGG/P5_Diamonds/blob/main/Images/corr.png)
 
   + Correlation `Price` of the diamond and `carat` weight of the diamond are highly correlated
@@ -65,10 +64,12 @@
 
 To perform the analysis and find the best model and estimators I used the [GridSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) tool from sklearn 
 
- 3- Predict the price of a given diamons' characteristics
- The final model was: PONER EL MODELO QUE USE AL FINAL
+ 3- Predict the price of a based on  diamons' characteristics in the test file
+ The final model was: `Random Forest` with the following parameters
+  - min_samples_leaf=2
+  -  min_samples_split=3                                     
+  - n_estimators=300
 
-Results for the best model:
 
                 
 
