@@ -1,5 +1,6 @@
 # P5_Diamonds
 
+![squema](https://github.com/AnaAGG/P5_Diamonds/blob/main/Images/squema.png)
 # Data
 
 ## Files
@@ -13,10 +14,10 @@
 * **id**: only for test & sample submission files, id for prediction sample identification  
 * **price**: price in USD  
 * **carat**: weight of the diamond  
-* **cut**: quality of the cut (Fair, Good, Very Good, Premium, Ideal  
+* **cut**: quality of the cut (Fair, Good, Very Good, Premium, Ideal)
 * **color**: diamond colour, from J (worst) to D (best)  
 
-**clarity**: a measurement of how clear the diamond is (I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best))  
+**clarity**: a measurement of how clear the diamond from worst to best is (I1 , SI2, SI1, VS2, VS1, VVS2, VVS1, IF )  
 
 * **x**: length in mm  
 * **y**: width in mm  
@@ -28,10 +29,10 @@
 
  1- Correlation matrix: (see also the pairplot)
 
- ![corrmatrix](https://github.com/AnaAGG/P5_Diamonds/blob/main/Images/corr.png)
+![corrmatrix](https://github.com/AnaAGG/P5_Diamonds/blob/main/Images/corr.png)
 
-  + Correlation `Price` of the diamond and `carat` weight of the diamond are highly correlated (> 0.96)
-  + `x` ,   `y` and `z` are correlated with the price.
+  + Correlation `Price` of the diamond and `carat` weight of the diamond are highly correlated
+  + `x` ,    `y` and `z` are correlated with the price.
   + `Depth` and `Table` are weakly correlated with the price of the diamond.
   + `Carat` is one of the main features to predict the price of a diamond.
 
@@ -42,14 +43,14 @@
 
 | Cut           | Color   | Clarity  |
 |---------------|---------|----------|
-| Fair = 1      | E:1     | VVS1 = 1 |
-| Good = 2      | D = 2   | IF = 2   |
-| Ideal = 3     | F = 3   | VVS2 = 3 |
-| Premium = 4   | G = 4   | VS1 = 4  |
-| Very Good = 5 | H = 5   | I1 = 5   |
-|          | I = 6 |VS2 = 6       |
-|          |J = 7|  SI1 = 7          |
-|        |         |  SI2 = 8        |
+| Fair = 1      | E:1     | IF  = 1 |
+| Good = 2      | D = 2   | SI2 = 2   |
+| Ideal = 3     | F = 3   | SI1 = 3 |
+| Premium = 4   | G = 4   | VS2 = 4  |
+| Very Good = 5 | H = 5   | VS1 = 5   |
+|          | I = 6 |VVS2 = 6       |
+|          |J = 7|  VVS1 = 7          |
+|        |         |  IF = 8        |
 
   
 
