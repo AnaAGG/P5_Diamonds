@@ -69,8 +69,3 @@ To perform the analysis and find the best model and estimators I used the [GridS
   - min_samples_leaf=2
   -  min_samples_split=3                                     
   - n_estimators=300
-
-
-                
-
- 
